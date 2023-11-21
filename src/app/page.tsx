@@ -5,22 +5,29 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='bg-slate-200 text-black'>
-        <main className='h-screen ml-28'>
-          <div className='grid grid-cols-2'>
-            <h1 className='text-2xl font-extrabold break-all'>Saúde natural para os seus cabelos</h1>
-            <h2>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</h2>
-          </div>
-            <button className='rounded bg-green-300 max-w-xs'>Agendar um horário</button>
-          <div>
-            <img className='mr-40 max-w-xl max-h-96 rounded ml-40 mt-36' src="/images/2.jpg" alt="" />
+      <div className='bg-white text-black font-mono'>
+        <main className='h-screen ml-28 flex items-center'>
+          <div className='grid grid-cols-2 bg-slate-200 rounded-3xl'>
+            <div className=''>
+              <h1 className='text-2xl font-extrabold break-all mt-32 ml-28 w-96 mb-'>Conheça a melhor barbearia da zona norte!</h1>
+              <h2 className='ml-28 w-96 mb-16 mt-1'>Um salão exclusivo em Recife, com barbeiros capacitados.</h2>
+              <button className='rounded bg-blue-400 font-bold max-w-xs w-36 hover:translate-x-1 transition ml-28 mb-52'>Agendar um horário</button>
+            </div>
+            <div>
+              <img className='max-w-xl max-h-96 rounded-3xl ml-52 mt-24 mr-10' src="/images/2.jpg" alt="" />
+            </div>
           </div>
         </main>
-        <section className='h-screen'>
-          <h1>
-            Sobre nós
-          </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit commodi eum soluta vero sit consectetur vitae est minima dignissimos, a similique totam molestias beatae architecto perferendis voluptatem sint illo? Sapiente.</p>
+        <section className='h-screen ml-96 mr-96 grid grid-cols-2 bg-slate-200 rounded-3xl'>
+          <div className='flex items-center justify-end'>
+            <h1 className='font-bold'>
+              Sobre nós
+            </h1>
+            <p className='w-96 text-center font-semibold'>Descubra a excelência em cuidados capilares na nossa barbearia, onde contamos com uma equipe de barbeiros altamente capacitados, acumulando mais de 2 anos de experiência. Nossos profissionais dedicam-se a proporcionar o melhor corte, combinando habilidade artística e know-how técnico para garantir resultados impecáveis. Venha desfrutar de um serviço de qualidade em um ambiente acolhedor e dedicado à arte do barbear.</p>
+          </div>
+          <div>
+            <img className='max-w-xl max-h-96 rounded-3xl ml-52 mt-24 mr-10' src="/images/1.jpg" alt="" />
+          </div>
         </section>
         <section className='h-screen'>
           <h1>

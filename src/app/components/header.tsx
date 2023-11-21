@@ -3,10 +3,10 @@ import React from 'react';
 const Header = () => {
   return (
     <>
-      <div className='h-20 flex items-center justify-between bg-gray-700'>
-        <header className='bg-gray-700 text-2xl font-sans flex font-extrabold ml-28'>
+      <div className='h-20 flex items-center justify-between bg-blue-400'>
+        <header className='bg-blue-400 text-2xl font-sans flex font-extrabold ml-28'>
           <h1 className='text-black'>Dominic</h1>
-          <h1 className='text-green-300'>Barber</h1>
+          <h1 className='text-white'>Barber</h1>
 
         </header>
 
