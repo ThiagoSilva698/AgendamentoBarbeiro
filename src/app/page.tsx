@@ -5,12 +5,16 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='bg-white text-black'>
-        <main className='h-screen ml-28 flex items-center'>
-          <h1 className='text-2xl font-extrabold break-all'>Saúde natural para os seus cabelos</h1>
-          <h2>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</h2>
-          <button className='rounded bg-green-300'>Agendar um horário</button>
-          <img className='mr-40' src="https://www.countycouncilsnetwork.org.uk/wp-content/uploads/turbines-1-561x375.jpg" alt="" />
+      <div className='bg-slate-200 text-black'>
+        <main className='h-screen ml-28'>
+          <div className='grid grid-cols-2'>
+            <h1 className='text-2xl font-extrabold break-all'>Saúde natural para os seus cabelos</h1>
+            <h2>Um salão exclusivo em São Paulo, especializado em tratamentos naturais.</h2>
+          </div>
+            <button className='rounded bg-green-300 max-w-xs'>Agendar um horário</button>
+          <div>
+            <img className='mr-40 max-w-xl max-h-96 rounded ml-40 mt-36' src="/images/2.jpg" alt="" />
+          </div>
         </main>
         <section className='h-screen'>
           <h1>
