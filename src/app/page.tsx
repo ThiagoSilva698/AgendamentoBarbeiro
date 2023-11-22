@@ -18,7 +18,7 @@ export default function Home() {
             </div>
           </div>
         </main>
-        <section className='h-screen ml-96 mr-96 grid grid-cols-2 bg-slate-200 rounded-3xl'>
+        <section className='h-screen ml-28 mb-16 grid grid-cols-2 bg-slate-200 rounded-3xl'>
           <div className='flex items-center justify-end'>
             <h1 className='font-bold'>
               Sobre nós
