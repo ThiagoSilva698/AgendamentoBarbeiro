@@ -8,8 +8,8 @@ export default function Home() {
       <div className='bg-white text-black font-mono'>
         <main className='h-screen ml-28 flex items-center'>
           <div className='grid grid-cols-2 mt-20 bg-slate-200 rounded-3xl'>
-            <div className=''>
-              <h1 className='text-2xl font-extrabold mt-32 ml-28 w-96 mb-'>Conheça a melhor barbearia da zona norte!</h1>
+            <div>
+              <h1 className='text-2xl font-extrabold mt-32 ml-28 w-96'>Conheça a melhor barbearia da zona norte!</h1>
               <h2 className='ml-28 text-lg w-96 mb-16 mt-1'>Um salão exclusivo em Recife, com barbeiros capacitados.</h2>
               <button className='rounded-3xl bg-blue-400 font-bold max-w-xs w-36 hover:translate-x-1 transition ml-28 mb-52'>Agendar um horário</button>
             </div>
@@ -19,7 +19,7 @@ export default function Home() {
           </div>
         </main>
         <section className='h-screen mt-10'>
-          <div className='items-center mr-36 ml-28 mb-16 grid grid-cols-2 bg-slate-200 rounded-3xl'>
+          <div className='items-center mr-36 ml-96 mb-16 grid grid-cols-2 bg-slate-200 rounded-3xl'>
             <div>
               <img className='max-w-xl max-h-96 rounded-3xl mr-52 mt-20 mb-20 ml-10' src="/images/1.jpg" alt="" />
             </div>
@@ -32,29 +32,32 @@ export default function Home() {
           </div>
 
         </section>
-        <section className='h-screen'>
-          <h1>
-            Serviços
-          </h1>
-          <h2>
-            Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
-          </h2>
+        <section className='h-96 table mr-96 mb-96 flex flex-col justify-center items-start ml-28 bg-slate-200 rounded-3xl'>
+          <div>
+            <h1>
+              Serviços
+            </h1>
+            <h2 className='w-96'>
+              Com mais de 10 anos no mercado, o Beautysalon já conquistou clientes de inúmeros países com seus tratamentos exclusivos e totalmente naturais
+            </h2>
 
-          <div className=''>
-            <div className='flex items-center justify-between'>
-              <h2 className='font-sans font-bold'>Terapia Capilar</h2>
-              <h2 className='font-sans font-bold'>Cortes</h2>
-              <h2 className='font-sans font-bold'>Tratamentos</h2>
-            </div>
-            <div className='flex items-center justify-between'>
-              <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
-              <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
-              <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
-            </div>
+            <img className='max-w-xl max-h-96 rounded-3xl ml-52 mt-24 mr-10' src="/images/3.jpg" alt="" />
 
+            <div className=''>
+              <div className='flex items-center justify-around mt-20'>
+                <h2 className='font-sans font-bold'>Terapia Capilar</h2>
+                <h2 className='font-sans font-bold'>Cortes</h2>
+                <h2 className='font-sans font-bold'>Tratamentos</h2>
+              </div>
+              <div className='flex items-center justify-between'>
+                <p>Terapia completa para couro cabeludo e fios, protegendo todos os tipos de cabelos, inclusive os longos e finos.</p>
+                <p>A nossa equipe é repleta de profissionais renomados, famosos por lançarem tendências com cortes diferenciados e clássicos.</p>
+                <p>O beautysalon conta com diversos tratamentos naturais e totalmente veganos, para qualquer tipo de cabelo.</p>
+              </div>
+            </div>
           </div>
         </section>
-        <section className='h-screen'>
+        <section className='h-96 table mr-96 mb-96 flex flex-col justify-center items-start ml-28 bg-slate-200 rounded-3xl'>
           <h1>Depoimentos de quem já passou por aqui</h1>
           <h2>      Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</h2>
         </section>
