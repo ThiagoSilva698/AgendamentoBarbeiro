@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <div className='bg-white text-black font-mono'>
+      <div className='bg-bgbar text-black font-mono'>
         <main className='h-screen ml-28 flex items-center'>
           <div className='grid grid-cols-2 mt-20 bg-slate-200 rounded-3xl'>
             <div>
