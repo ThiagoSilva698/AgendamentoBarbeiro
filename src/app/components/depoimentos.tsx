@@ -1,0 +1,15 @@
+import React from 'react';
+
+const Depoimentos = () => {
+  return (
+    <>
+      <section className='h-96 table mr-96 mb-96 flex flex-col justify-center items-start ml-28 bg-slate-200 rounded-3xl'>
+        <h1>Depoimentos de quem já passou por aqui</h1>
+        <h2>      Eu sou cliente do Beautysalon há 5 anos e não troco por nada! Certamente meu cabelo mudou muito depois que comecei a tratar somente com produtos naturais e veganos. São profissionais incríveis e qualificados.</h2>
+      </section>
+    </>
+
+  )
+}
+
+export default Depoimentos;
