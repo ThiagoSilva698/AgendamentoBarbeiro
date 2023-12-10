@@ -11,7 +11,7 @@ export default function Home() {
       <Header />
       <div className='bg-bgbar text-black font-mono'>
         <main className='h-screen ml-28 flex items-center'>
-          <div className='grid grid-cols-2 mt-20 bg-slate-200 rounded-3xl'>
+          <div className='grid grid-cols-2 mt-20 bg-slate-300 rounded-3xl'>
             <div>
               <h1 className='text-2xl font-extrabold mt-32 ml-28 w-96'>Conheça a melhor barbearia da zona norte!</h1>
               <h2 className='ml-28 text-lg w-96 mb-16 mt-1'>Um salão exclusivo em Recife, com barbeiros capacitados.</h2>
