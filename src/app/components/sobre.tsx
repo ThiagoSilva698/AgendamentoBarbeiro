@@ -1,4 +1,6 @@
 import React from 'react';
+import Image from 'next/image';
+
 
 const Sobre = () => {
   return (
@@ -6,7 +8,13 @@ const Sobre = () => {
       <section className='h-screen mt-10'>
         <div className='items-center mr-36 ml-96 mb-16 grid grid-cols-2 bg-slate-300 rounded-3xl'>
           <div>
-            <img className='max-w-xl max-h-96 rounded-3xl mr-52 mt-20 mb-20 ml-10' src="/images/1.jpg" alt="" />
+          <Image className='rounded-3xl mt-24 ml-12 mb-20'
+                src="/images/1.jpg"
+                alt='Modelo Ed'
+                width={384}
+                height={384}
+                style={{ maxWidth: '100%', height: 'auto' }}
+              />
           </div>
           <div>
             <h1 className='font-bold ml-36 text-lg'>
