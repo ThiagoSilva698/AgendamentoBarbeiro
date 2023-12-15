@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Servicos = () => {
   return (
     <>
-      <section className='grid grid-cols-2 mr-96 mb-96 ml-28 -mt-40 bg-slate-300 rounded-3xl'>
+      <section id='servicos' className='grid grid-cols-2 mr-96 mb-96 ml-28 -mt-40 bg-slate-300 rounded-3xl'>
         <div className='h-96 mb-32'>
           <div className='mt-4 ml-24 text-center'>
             <div className='mt-20'>

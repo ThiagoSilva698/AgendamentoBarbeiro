@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../app/components/header';
 import Sobre from '../app/components/sobre';
 import Servicos from '../app/components/servicos';
-import Depoimentos from './components/depoimentos';
+import Cortes from './components/Cortes';
 import Footer from './components/footer';
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Header />
       <div className='bg-bgbar text-black font-mono'>
-        <main className='h-screen ml-28 flex items-center'>
+        <main id='inicio' className='h-screen ml-28 flex items-center'>
           <div className='w-screen mr-96 grid grid-cols-2 mt-20 bg-slate-300 rounded-3xl'>
             <div>
               <h1 className='text-2xl font-extrabold mt-32 ml-28 w-96'>Conheça a melhor barbearia da zona norte!</h1>
@@ -31,7 +31,7 @@ export default function Home() {
         </main>
         <Sobre />
         <Servicos />
-        <Depoimentos />
+        <Cortes />
         <Footer />
       </div>
     </>

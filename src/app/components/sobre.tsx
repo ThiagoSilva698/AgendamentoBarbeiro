@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Sobre = () => {
   return (
     <>
-      <section className='h-screen mt-10'>
+      <section id='sobre' className='h-screen mt-10'>
         <div className='items-center mr-36 ml-96 mb-16 grid grid-cols-2 bg-slate-300 rounded-3xl'>
           <div>
           <Image className='rounded-3xl mt-24 ml-12 mb-20'

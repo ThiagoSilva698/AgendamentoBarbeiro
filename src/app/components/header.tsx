@@ -1,47 +1,99 @@
-import React from 'react';
+"use client";
+import React, { useState } from "react"
 
-const Header = () => {
+const Navbar = () => {
+
+  const [isClick, setisClick] = useState(false);
+
+  const toggleNavbar = () => {
+    setisClick(!isClick)
+  }
+
   return (
     <>
-      <div className='h-20 w-11/12 ml-16 flex fixed rounded-3xl items-center justify-between bg-blue-400'>
-        <header className='bg-blue-400 text-2xl font-sans flex font-extrabold ml-28'>
-          <h1 className='text-black'>Dominic</h1>
-          <h1 className='text-white'>Barber</h1>
-
-        </header>
-
-        <nav className='text-black font-bold flex justify-between items-center font-sans space-x-8 pr-28'>
-          <ul>
-            <li>
-              <a className='hover:opacity-30' href="">Inicio</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">Sobre</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">Servicos</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">Cortes</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="">Contato</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
+      <nav className="bg-blue-400 fixed w-screen">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="flex items-center justify-between h-16">
+            <div className="flex items-center">
+              <div className="flex-shrink-0">
+                <a href="/" className="text-white">Dominic Barber</a>
+              </div>
+            </div>
+            <div className="hidden md:block ">
+              <div className="ml-4 flex items-center space-x-4">
+                <a href="#inicio" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                  Inicio
+                </a>
+                <a href="#sobre" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                  Sobre
+                </a>
+                <a href="#servicos" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                  Servicos
+                </a>
+                <a href="#cortes" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                  Cortes
+                </a>
+                <a href="#footer" className="text-white hover:bg-white hover:text-black rounded-lg p-2">
+                  Contato
+                </a>
+              </div>
+            </div>
+            <div className="md:hidden flex items-center">
+              <button
+                className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white 
+              focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                onClick={toggleNavbar}>{isClick ? (
+                  <svg className="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor" >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                ) : (
+                  <svg className="h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16m-7 6h7" />
+                  </svg>
+                )}</button>
+            </div>
+          </div>
+        </div>
+        {isClick && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                Inicio
+              </a>
+              <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                Sobre
+              </a>
+              <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                Servicos
+              </a>
+              <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                Cortes
+              </a>
+              <a href="/" className="text-white block hover:bg-white hover:text-black rounded-lg p-2">
+                Contato
+              </a>
+            </div>
+          </div>
+        )}
+      </nav>
     </>
-
   )
 }
 
-export default Header;
+export default Navbar
